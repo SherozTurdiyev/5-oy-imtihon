@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://react-shop-siza.vercel.app/assets/Pro%20siyah-YkhBd6v0.jpg"
+        type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        dark: "rgb(20 20 20)"
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="./style/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>E-commerce web site</title>
+</head>
+
+<body class="bg-dark text-white">
+    <nav class="text-white">
+        <div class="container flex justify-between items-center py-3">
+            <div class="logo">E-commerce</div>
+            <ul class="flex justify-between items-center gap-4">
+                <li><a href="#">Home</a></li>
+                <li><a href="./pages/Products.html">Product</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+            <ul class="flex justify-between items-center gap-4">
+                <li><button>Login</button></li>
+                <li><button>Sign Up</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+        <h1 data-aos="fade-down" data-a class="mt-5 text-center text-[42px]">E-commerce web site</h1>
+    </header>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

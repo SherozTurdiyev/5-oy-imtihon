@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://react-shop-siza.vercel.app/assets/Pro%20siyah-YkhBd6v0.jpg"
+        type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        dark: "rgb(20 20 20)",
+                        bg_btn: "rgb(112 59 247)"
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="../style/style.css">
+    <title>Products</title>
+</head>
+
+<body class="bg-dark relative">
+    <nav class="text-white">
+        <div class="container flex justify-between items-center py-3">
+            <div class="logo">E-commerce</div>
+            <ul class="flex justify-between items-center gap-4">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+            <ul class="flex justify-between items-center gap-4">
+                <li><button>Login</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container flex gap-4">
+        <div class="w-9/12">
+            <div class="flex gap-4">
+                <input type="search">
+                <div class="text-white" onclick="showStore()">
+                    Store <sup id="badge" class="bg-red-500 text-white py-1 px-2 rounded-lg">0</sup>
+                </div>
+
+            </div>
+            <div id="products_list" class="grid grid-cols-3 gap-4 mt-10">
+
+            </div>
+            <div id="pagination" class="text-white flex justify-center gap-4 my-5">
+                <!-- <button class="bg-cyan-600 p-3 rounded-lg active:bg-cyan-600/60">1</button>
+                <button class="bg-cyan-600 p-3 rounded-lg active:bg-cyan-600/60">2</button>
+                <button class="bg-cyan-600 p-3 rounded-lg active:bg-cyan-600/60">3</button> -->
+            </div>
+        </div>
+        <div class="categories w-3/12 flex flex-col gap-[2px    ] mt-14">
+
+        </div>
+    </main>
+
+    <div id="store" class="w-[40vw] h-[100vh] border bg-black fixed py-3 px-5 overflow-scroll top-0 right-0 translate-x-[1000px] duration-1000 flex flex-col gap-2">
+        <!-- <div class="text-white flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <img class="w-20 h-20 rounded-lg" src="https://i.imgur.com/SolkFEB.jpeg" alt="">
+                <div>
+                    <p>title</p>
+                    <p>price</p>
+                </div>
+            </div>
+            <div>
+                <button class="bg-bg_btn py-2 px-4 rounded-lg">remove</button>
+                <button class="bg-bg_btn py-2 px-4 rounded-lg">-</button>
+                <span>1</span>
+                <button class="bg-bg_btn py-2 px-4 rounded-lg">+</button>
+            </div>
+        </div> -->
+    </div>
+
+
+
+
+    <script src="../js/products.js"></script>
+</body>
+
+</html>
